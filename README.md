@@ -12,6 +12,6 @@ The site didn't come out the way I wanted, but I learned a lot about:
 6. Throttling
 7. DOM Manipulation
 
-** think I tried to start running before I could walk; there is still so much to learn.**
+**I think I tried to start running before I could walk; there is still so much to learn.**
 
 My main.js is really just *function junction*! 
