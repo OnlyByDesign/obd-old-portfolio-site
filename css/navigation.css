@@ -1,0 +1,340 @@
+/*****************************
+************BY*NAV************
+*****************************/
+
+
+/*************Nav*Universal**************/
+.main__nav {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    right: 0;
+    left: 0;
+    padding-top: 0;
+    z-index: 999;
+    pointer-events: none; }
+.main__nav *:not(.nav__logo svg) {
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    transition: all .5s linear; }
+.nav__container--active {
+    height: 50px;
+    padding-bottom: 0; }
+.nav__item {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    pointer-events: all; }
+
+
+/****************Main*nav****************/
+.nav__logo {
+    width: 35px;
+    margin-top: 24px;
+    margin-left: 24px;
+    position: relative;
+    z-index: 2; }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .nav__logo {
+        margin-top: 40px;
+        margin-left: 40px; }
+}
+@supports (-ms-ime-align:auto) {
+    .nav__logo {
+        margin-top: 40px;
+        margin-left: 40px; }
+}
+.nav__svg svg {
+    fill: white;
+    pointer-events: none; }
+.nav__toggle {
+    margin-top: 46px;
+    margin-right: 51px;
+    float: right;
+    cursor: pointer; }
+.nav__icon {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    cursor: pointer; }  
+.nav__icon span {
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    height: 2px;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out; }
+.nav__icon span:nth-child(1) {
+    top: 0px;
+    width: 35px; }
+.nav__icon span:nth-child(2), .nav__icon span:nth-child(3), .nav__icon span:nth-child(4) {
+    width: 25px; }
+.nav__icon span:nth-child(2) {
+    top: 8px; }
+.nav__icon span:nth-child(3) {
+    top: 16px; }
+.nav__icon span:nth-child(4) {
+    top: 24px; }
+.nav__icon.open span {
+    background: black; }
+.nav__icon.open span:nth-child(1) {
+    top: 10px;
+    width: 0%;
+    left: 50%; }
+.nav__icon.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }
+.nav__icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 8px; }
+.nav__icon.open span:nth-child(4) {
+    top: 10px;
+    width: 0%;
+    left: 50%; }
+.nav__icon.overlay span {
+    background: white; }
+.nav__icon.overlay span:nth-child(2), .nav__icon.overlay span:nth-child(3) {
+    width: 15px; }
+.nav__icon.overlay span:nth-child(1) {
+    top: 10px;
+    width: 75%;
+    left: 25%; }
+.nav__icon.overlay span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(-45deg);
+    top: 5px;
+    left: 5px; }
+.nav__icon.overlay span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(45deg);
+    top: 15px;
+    left: 5px; }
+.nav__icon.overlay span:nth-child(4) {
+    opacity: 0; }
+
+    
+/****************Sub*Nav****************/
+.nav__sub {
+    position: fixed;
+    bottom: 0;
+    z-index: 999; }
+.nav__contact {
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    padding-top: 5px;
+    color: var(--darkgrey);
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    height: 50px;
+    width: 350px;
+    z-index: 999;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: white; }
+.nav__contact--inactive {
+    margin-bottom: -50px; }
+.nav__contact.hide {
+    display: none; }
+.contact__info {
+    width: calc(100% - 50px);
+    height: 130px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    z-index: 998;
+    margin-left: 25px;
+    padding-top: 50px; }
+.contact__info--inactive {
+    margin-bottom: -130px; }
+.contact__info p {
+    font-weight: 400;
+    letter-spacing: 0.5px; }
+.contact__info p i {
+    font-size: calc(1em - 2px);
+    font-style: normal;
+    letter-spacing: .05em; }
+.contact__info p a {
+    color: black;
+    text-transform: none;
+    text-decoration: none; }
+.contact__cr {
+    float: left;
+    transform: rotate(-90deg); }
+.info__main {
+    display: inline-block;
+    line-height: 55px;
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 12.5vw; }
+.info__item {
+    display: block; }
+h6.contact__rights {
+    letter-spacing: 2px;
+    color: var(--darkgrey);
+    text-transform: capitalize; }
+.info__icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    margin: 12.5px 12.5px 0 0;
+    z-index: 1000; }
+.info__icon.open span {
+    background: black;
+    width: 15px; }
+
+@media screen and (max-width: 1250px) {
+    .contact__info {
+        padding-top: 30px; }
+    .info__main {
+        padding-right: 0;
+        float: left;
+        text-align: left; }
+    .contact__info p {
+        display: block;
+        text-align: left; }
+    .contact__cr {
+        padding-right: 35px;
+        margin-left: -15px; }
+}
+@media screen and (max-width: 1024px) {
+    .nav__logo {
+        width: 35px;
+        margin-top: 17.5px;
+        margin-left: 17.5px; } 
+}
+@media screen and (max-height: 800px) {
+    .nav__logo {
+        margin-top: 18px;
+        margin-left: 18px; }
+}
+@media screen and (max-width: 768px) {
+    .nav__contact {
+        width: calc(100% - 50px);
+        height: 50px !important;
+        font-size: 15px;
+        letter-spacing: 5px; }
+    .contact__info {
+        height: 30vh;
+        padding: 0; }
+    .contact__info--inactive {
+        margin-bottom: -30vh; }
+    .contact__cr {
+        transform: rotate(-90deg) translateX(-30px);
+        margin-left: 0;
+        padding-right: 0; }
+    .info__main {
+        padding-top: 12.5px; }
+    .info__item {
+        width: 100%;
+        font-size: 16px;
+        padding: 0 0 5% 0;
+        text-align: left; }
+    .info__item b {
+        font-size: 20px;
+        line-height: 10px;
+        display: block; }
+    .info__item.contact__rights {
+        font-size: 12px; }
+    .info__icon {
+        width: 50px;
+        height: 50px; }
+    .info__icon.open span {
+        width: 20px; }
+    .nav__icon.open span:nth-child(3) {
+        top: 22.5px;
+        right: 15px; }
+    .nav__icon.open span:nth-child(2) {
+        top: 22.5px;
+        right: 15px; }
+}
+@media screen and (max-height: 675px) {
+    .nav__logo {
+        margin-top: 14px;
+        margin-left: 14px; }
+}
+@media screen and (max-width: 600px) {
+    .nav__toggle {
+        margin-top: 28px;
+        margin-right: 30px; }
+}
+@media screen and (max-height: 550px) {
+    .nav__logo {
+        margin-top: 10px;
+        margin-left: 10px; }
+}
+@media screen and (max-width: 450px) {
+    .main__nav {
+        width: calc(100% - 30px);
+        top: 10px; }
+    .nav__logo {
+        width: 30px; }
+    .nav__toggle {
+        margin-right: 10px; }
+    .nav__contact {
+        width: 100%;
+        right: 0;
+        font-size: 12px; }
+    .contact__info {
+        width: 100%;
+        margin-left: 0; }
+    .info__item b {
+        font-size: 16px; }
+    .contact__cr {
+        transform: rotate(-90deg) translateX(-30px) translateY(-5px); }
+}
+@media screen and (max-width: 340px) {
+    .main__nav {
+        width: calc(100% - 50px);
+        top: 25px; }
+    .nav__icon {
+        transform: scale(.8); }
+}
+@media screen and (max-width: 750px) and (orientation: landscape) {
+    .main__nav {
+        width: calc(100% - 60px);
+        top: 30px; }
+    .nav__logo {
+        width: 30px; }
+    .nav__icon {
+        transform: scale(.8); }
+    .nav__contact {
+        width: 250px;
+        height: 40px !important;
+        right: 0;
+        font-size: 11px; }
+    .contact__info {
+        width: 100%;
+        margin: 0 auto;
+        height: 50vh; }
+    .contact__info--inactive {
+        margin-bottom: -50vh; }
+    .info__item b {
+        font-size: 18px; }
+}
